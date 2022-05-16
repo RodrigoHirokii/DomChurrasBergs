@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Churras Bergs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <header class="main-header">
+      <div class="menu">
+        <div class="menu-logo">
+          <a href="#">Dom Churras Bergs</a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#carnes">Carnes</a></li>
+            <li><a href="#preco">Preço</a></li>
+            <li><a href="#pecaja">Peça Já</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- H1 Introduction-->
+    <div class="introduction">
+      <h1>
+        A melhor Churrascaria <br />
+        do Brasil
+      </h1>
+    </div>
+
+    <!-- Section 1 - About -->
+    <section class="about" id="sobre">
+      <div class="about-info">
+        <h1>Sobre</h1>
+        <p>
+          " O Contrafilet servido pela simpatia e cortesia do Sr. Bergs é
+          incrível. E tem uma cebola de entrada que agrada é muito e eu não
+          gosto de cebola crua, mas essa não recuso não! "
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="img/steakhouse1.jpg" alt="Steak house 1" />
+      </div>
+      <div class="about-img">
+        <img src="img/steakhouse2.jpg" alt="Steak house 2" />
+      </div>
+    </section>
+
+    <!-- Section 2 - Meats -->
+    <section class="meats" id="carnes">
+      <h1>Carnes</h1>
+      <div class="meats-container">
+        <div class="meats-item meat1">
+          <h2>COSTELA PREMIUM</h2>
+          <img src="img/meat1.jpg" alt="meat1" />
+        </div>
+        <div class="meats-item meat2">
+          <h2>PICANHA</h2>
+          <img src="img/meat2.jpg" alt="meat2" />
+        </div>
+        <div class="meats-item meat3">
+          <h2>CONTRA FILÉ</h2>
+          <img src="img/meat3.jpg" alt="meat3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 - Price-->
+    <section class="price" id="preco">
+      <div class="price-item">
+        <span><sup>R$</sup>120</span>
+      </div>
+
+      <div class="price-item">
+        <span><sup>R$</sup>80</span>
+      </div>
+
+      <div class="price-item">
+        <span><sup>R$</sup>90</span>
+      </div>
+    </section>
+
+    <!-- Section - Order Now -->
+    <div class="container-order" id="pecaja">
+      <h1>Peça Já</h1>
+      <input class="adults" name="adults" type="number" placeholder="Adultos" />
+      <input
+        class="childrens"
+        name="childrens"
+        type="number"
+        placeholder="Crianças"
+      />
+      <input
+        class="duration"
+        name="duration"
+        type="number"
+        placeholder="Duração (horas)"
+      />
+      <button onclick="calc()">Calcular</button>
+
+      <div class="result"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="copy">
+      <p>© Todos os direitos reservados</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
